@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #151515;
+  --subtitles: #d9d9d9;
+  --lighter-background: #242424;
+  --text: white;
+  --purple: purple;
+  --green: green;
+  font-size: 62.5%;
+}
+
+body,
+select,
+button,
+a {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--text);
+}
+
+body {
+  background: var(--background);
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 1.6rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+h1 {
+  color: var(--text);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: -0.333px;
+}
+
+header {
+  background: linear-gradient(180deg, rgba(36, 36, 36, 0) 0.65%, #242424 100%);
+  width: fit-content;
+  padding: 1rem;
+  margin: 2rem auto 4rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+header img {
+  width: 17rem;
+  height: 17rem;
+  filter: grayscale(1);
+}
+
+header a {
+  text-decoration: none;
+}
+
+header svg {
+  font-size: 3rem;
+  transition: all 200ms;
+}
+
+header svg:hover {
+  filter: brightness(0.7);
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.home h2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 4rem; /* 100% */
+  letter-spacing: -1.136px;
+}
+
+.home p {
+  color: var(--subtitles);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem; /* 162.5% */
+}
+
+.link-button {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--purple);
+  width: fit-content;
+  margin: 0 auto;
+
+  transition: all 200ms;
+}
+
+.link-button:hover {
+  filter: brightness(0.7);
+}
+
+.link-button a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.6rem; /* 162.5% */
+  letter-spacing: 2.286px;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links svg {
+  margin-top: 5rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.separator {
+  color: var(--subtitles);
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4rem; /* 125% */
+  letter-spacing: -1px;
+  margin-bottom: 1.6rem;
+}
+
+.border {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 4rem;
+}
+
+.border h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 4rem; /* 125% */
+  letter-spacing: -1px;
+}
+
+.border h3 + h3 {
+  margin-top: 5rem;
+}
